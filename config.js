@@ -53,10 +53,10 @@ const config = {
     // Automatically fail request if it doesn't pass the below criteria:
     // Be careful with `auto_swipe_minimum_length`, as it will not allow short messages through, set it to 0 if this is undersirable
     // 0 to disable
-    auto_swipe_minimum_length: 0,
+    auto_swipe_minimum_length: 5,
     // If enough words on the blacklist are contained in the response, auto retry
     // 0 to disable
-    auto_swipe_blacklist_threshold: 2,
+    auto_swipe_blacklist_threshold: 7,
     auto_swipe_blacklist: [
         "ethical(ly)?",
         "unethical",
