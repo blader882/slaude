@@ -1,9 +1,9 @@
 const config = {
-    TOKEN: "xoxc-5236168926065-5220588698693-5208992045591-60da2c8293531044d23beabd37f930d81c54c8b944a50dcdf2e3078a118feeca",
-    COOKIE: "xoxd-69dn3urwucdI5JJ%2FwM3H543zRy%2FQnNcvFNsSeZw%2BF6BfJ6PNFmkKwpImKHTK5Nx0nD220XjeluAJNovECFgkxHlq7Mn%2Bi9zZqFr9Mp7qpoQfbe8EQ%2BbIzwE%2BXLaFXUMGb%2B%2Fr1nHWwtI9zybPXAMuKC%2BfLq0hQ%2FiAoFV3hcoL5x9yX3pU70NsbBLeHQ%3D%3D",
-    TEAM_ID: "maco-4tz2953",
-    CHANNEL: "C056KC1NCH1",
-    CLAUDE_USER: "U056504JLA3",
+    TOKEN: "xoxc-5298534976743-5306466839110-5325713264785-03c4955bbb9338d2896559cc9378f740cdf7315452b3fce5b01065b7c08c24d7",
+    COOKIE: "xoxd-2qIF9xE70AaRsCUEzagG0QtLHI51mZMlNfTvDMrHe0EZ5iC8pD6wy%2F6Cwvlibk1%2FqUXqz6XdLt9o8kxs4fsqu%2Bhk%2FpL51FCkpDLyeZy0oAM3z8uIMUakcxiuzzRzeMF5A11CRdp2I%2BH9DSoYgiDrxCIzGLhGt2nfd7hvYy0Mhpi56oKiQGn5YcUxMg%3D%3D",
+    TEAM_ID: "Wataoke",
+    CHANNEL: "C0590DQRP3Q",
+    CLAUDE_USER: "U05972H1P0A",
 
     edit_msg_with_ping: true,
 
@@ -14,7 +14,7 @@ const config = {
     // Can be whatever you want it to be but keep in mind that it might result in unpredictable responses.
     // Anything we put here will eat into our max available tokens so keep it brief. Anything above ~12000 characters will get cut off by Slack.
     PING_MESSAGE_PREFIX: ".\n\n�A",
-    PING_MESSAGE: "r�",
+    PING_MESSAGE: ", write the next chat reply from Assistant in this fictional roleplay between Assistant and Human. write multiple replays if they're more characters. Always stay in character. Add dialog as much as possible.",
 
     // if edit_msg_with_ping is true:
     PING_PREFIX: "�A",
@@ -56,7 +56,7 @@ const config = {
     auto_swipe_minimum_length: 5,
     // If enough words on the blacklist are contained in the response, auto retry
     // 0 to disable
-    auto_swipe_blacklist_threshold: 7,
+    auto_swipe_blacklist_threshold: 20,
     auto_swipe_blacklist: [
         "ethical(ly)?",
         "unethical",
@@ -74,6 +74,10 @@ const config = {
         "(unable to|not) (continue|respond|provide|appropriate)",
         "inappropriate",
         "content",
+        "activities",
+        "promoting",
+        "dangerous",
+        "behavior",
     ],
     // wait before starting to send text, lest it be filtered
     auto_swipe_prebuffer_length: 200,
